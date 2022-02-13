@@ -1,0 +1,124 @@
+*{
+    box-sizing: border-box;
+    margin : 0
+}
+body {
+     font-size: 16px;
+     font-family: "Montserra", sans-serif;
+     color : rgba(0, 0, 0, .87);
+}
+.topbar{
+    z-index: 3;
+    position: fixed;
+    background: white;
+    top : 0;
+    left: 0;
+    right: 0;
+    padding: 20px 30px;
+}
+.navbar{
+    font-weight: 500;
+    float: left;
+    position: center;
+}
+.social{
+    float: right;
+}
+.social img{
+    opacity: .5;
+    padding: 0 15px;
+}
+.social img:hover{
+    opacity: 1.0;
+}
+.navbar a{
+    text-decoration: none;
+    padding: 0 50px;
+    color: #9F9F9F;
+}
+.navbar a:hover{
+    color: black;
+}
+.banniere img{
+     margin-top: 65px;
+     margin-bottom: -5px;
+     width: 100%;
+     height: auto;
+}
+.main{
+    float: left;
+    width: 75%;
+    background: white;
+    z-index: 2;
+    position: relative;
+}
+.sidebar{
+    position: relative;
+    padding : 5px 68.5px 1030px 58px;
+    float: right;
+    width: 25%;
+    background: rgb(240, 240, 240);
+    z-index: 1;
+}
+.sidebar ul{
+    font-size: 17px;
+    list-style-type: none;
+    line-height: 2.3;
+    padding: 0 0 30px 0;
+}
+.sidebar a{
+    color: rgb(194, 191, 191);
+    text-decoration: none;
+}
+.sidebar a:hover{
+    color: black;
+}
+.cat{
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 35px;
+    margin-top: 35px;
+}
+hr{
+    border-color: lightgray;
+}
+
+.main img{
+    position: absolute;
+    width: 364px;
+    height: auto;
+    float: left;
+    margin-right: 25px;
+}
+.main article{
+    position: relative;
+    padding-top: 43px;
+    padding-left: 100px;
+    padding-right: 20px;
+    margin-bottom: 80px;
+}
+.date{
+    padding-left: 400px;
+    color: lightgray;
+}
+.titre{
+    padding-left: 400px;
+    font-family: Cardo;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 2.0;
+    /* identical to box height, or 114% */
+    color: #000000;
+}
+.titre:hover{
+    text-decoration: underline;
+}
+.p{
+    padding-left: 400px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+}
