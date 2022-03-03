@@ -1,0 +1,668 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>MD-home Acceuil</title>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 200;
+        }
+
+        .carousel-caption {
+            top: 50%;
+            transform: translateY(-35%);
+            text-transform: uppercase;
+        }
+
+        .container {
+            margin: 3% auto;
+        }
+
+        .titre {
+            text-transform: uppercase;
+        }
+
+        #Icon {
+            max-width: 400px;
+            transform: translateX(0%);
+            transition: 1s ease;
+            -moz-box-shadow: 10px 10px 50px rgb(170, 170, 170);
+            -webkit-box-shadow: 10px 10px 50px rgb(170, 170, 170);
+            box-shadow: 10px 10px 50px rgb(170, 170, 170);
+        }
+
+        #Icon:hover {
+            -webkit-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            transform: scale(1.1);
+            transition: 1s ease;
+        }
+
+        a.anchor {
+            display: block;
+            position: relative;
+            top: -50px;
+            visibility: hidden;
+        }
+
+        .description-society {
+            font-style: italic;
+            margin-left: 32px;
+            font-family: Georgia, "Times New Roman", serif;
+        }
+
+        h3 {
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            margin-bottom: 40px;
+        }
+
+        h5 {
+            margin-bottom: -10px;
+        }
+
+        #footer {
+            color: white;
+        }
+
+        .box {
+            position: relative;
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+
+        .our-services {
+            margin-top: 75px;
+            padding-bottom: 30px;
+            padding: 0 60px;
+            min-height: 198px;
+            text-align: center;
+            border-radius: 10px;
+            background-color: #fff;
+            transition: all .4s ease-in-out;
+            box-shadow: 0 0 25px 0 rgba(20, 27, 202, .17)
+        }
+
+        .our-services .icon {
+            margin-bottom: -21px;
+            transform: translateY(-50%);
+            text-align: center
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .our-services h4,
+        .our-services p {
+            color: black;
+        }
+
+        .our-services:hover h4,
+        .our-services:hover p {
+            color: #fff;
+        }
+
+        .speedup:hover {
+            box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
+            cursor: pointer;
+            background-image: linear-gradient(-45deg, #fb0054 0%, #f55b2a 100%)
+        }
+
+        .settings:hover {
+            box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
+            cursor: pointer;
+            background-image: linear-gradient(-45deg, #34b5bf 0%, #210c59 100%)
+        }
+
+        .privacy:hover {
+            box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
+            cursor: pointer;
+            background-image: linear-gradient(-45deg, #3615e7 0%, #44a2f6 100%)
+        }
+
+        .backups:hover {
+            box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
+            cursor: pointer;
+            background-image: linear-gradient(-45deg, #fc6a0e 0%, #fdb642 100%)
+        }
+
+        .ssl:hover {
+            box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
+            cursor: pointer;
+            background-image: linear-gradient(-45deg, #8d40fb 0%, #5a57fb 100%)
+        }
+
+        .database:hover {
+            box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
+            cursor: pointer;
+            background-image: linear-gradient(-45deg, #27b88d 0%, #22dd73 100%)
+        }
+
+        .strong {
+            font-weight: 600;
+        }
+
+        .image-car {
+            filter: blur(5px);
+            filter: brightness(50%)
+        }
+
+        .titre-car {
+            font-size: 40px;
+        }
+
+        .titre-car h1 {
+            font-size: 60px;
+        }
+    </style>
+</head>
+
+
+<body class="d-flex flex-column min-vh-100">
+
+    <a class="anchor" id="Top"></a>
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">MD Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#Top">Acceuil</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#Charpentes">Charpentes</a></li>
+                            <li><a class="dropdown-item" href="#Planchers">Planchers</a></li>
+                            <li><a class="dropdown-item" href="#Bardages">Bardages</a></li>
+                            <li><a class="dropdown-item" href="#Constructions">Constructions</a></li>
+                            <li><a class="dropdown-item" href="#Carport">Carport</a></li>
+                            <li><a class="dropdown-item" href="#Poolhouse">Poolhouse</a></li>
+                            <li><a class="dropdown-item" href="#Rénovations">Rénovations</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#société">Qui sommes-nous ?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carousel  -->
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/carousel_1.jpeg" class="d-block w-100 image-car" alt="...">
+                <div class="carousel-caption titre-car d-none d-lg-block d-xl-block">
+                    <h1>MD home</h1>
+                    Spécialistes dans la Construction bois
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/carousel_2.jpeg" class="d-block w-100 image-car" alt="...">
+                <div class="carousel-caption titre-car d-none d-lg-block d-xl-block">
+                    <h1>MD home</h1>
+                    15 années d'expérience
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/carousel_1.jpeg" class="d-block w-100 image-car" alt="...">
+                <div class="carousel-caption titre-car d-none d-lg-block d-xl-block">
+                    <h1>MD home</h1>
+                    Contactez-nous pour vos projets
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- end of carousel -->
+
+    <!-- Test icones  -->
+
+    <div class="container-fluid mb-5">
+        <div class="text-center mt-5">
+            <h1>Nos Services</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <a href="#Charpentes">
+                    <div class="box">
+                        <div class="our-services settings">
+                            <div class="icon"> <img src="img/bois_icone.jpeg" class="rounded-circle"> </div>
+                            <h4>Charpentes</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="#Planchers">
+                    <div class="box">
+                        <div class="our-services speedup">
+                            <div class="icon"> <img src="img/bois_icone.jpeg" class="rounded-circle"> </div>
+                            <h4>Planchers</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="#Bardages">
+                    <div class="box">
+                        <div class="our-services privacy">
+                            <div class="icon"> <img src="img/bois_icone.jpeg" class="rounded-circle"> </div>
+                            <h4>Bardages</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <a href="#Constructions">
+                    <div class="box">
+                        <div class="our-services backups">
+                            <div class="icon"> <img src="img/bois_icone.jpeg" class="rounded-circle"> </div>
+                            <h4>Constructions</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="#Carport">
+                    <div class="box">
+                        <div class="our-services ssl">
+                            <div class="icon"> <img src="img/bois_icone.jpeg" class="rounded-circle"> </div>
+                            <h4>Carport</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="#Poolhouse">
+                    <div class="box">
+                        <div class="our-services database">
+                            <div class="icon"> <img src="img/bois_icone.jpeg" class="rounded-circle"> </div>
+                            <h4>Poolhouse</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fin test incone  -->
+
+    <!-- Debut articles  -->
+    <a class="anchor" id="Charpentes"></a>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6" align="center">
+                <img src="img/char_1.jpg" class="img-fluid" id="Icon">
+            </div>
+            <div class="col-md-6" align="center">
+                <h3>Charpentes</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda facilis, deserunt, minima
+                    dignissimos perspiciatis adipisci odio distinctio unde nobis expedita, rem enim. Ad amet iusto
+                    maxime accusantium esse explicabo nulla?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim perferendis cupiditate, in minima
+                    quibusdam minus omnis, voluptate perspiciatis commodi accusamus doloremque tempore magnam dolorem
+                    nisi quo architecto, doloribus placeat aspernatur!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit facere ut, quas quisquam impedit
+                    deleniti rem nostrum? Repellendus, alias. Impedit magni doloremque vitae placeat sed maxime
+                    obcaecati debitis sint accusantium.
+                </p>
+                <a href="charpentes.html"><button type="button" class="btn btn-outline-dark">Voir plus sur les Charpentes</button></a>
+            </div>
+        </div>
+    </div>
+
+    <hr style="width:70%; margin-left:15% !important; margin-right:15% !important;" />
+    <a class="anchor" id="Planchers"></a>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6" align="center">
+                <img src="img/char_1.jpg" class="img-fluid" id="Icon">
+            </div>
+            <div class="col-md-6" align="center">
+                <h3>Planchers</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda facilis, deserunt, minima
+                    dignissimos perspiciatis adipisci odio distinctio unde nobis expedita, rem enim. Ad amet iusto
+                    maxime accusantium esse explicabo nulla?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim perferendis cupiditate, in minima
+                    quibusdam minus omnis, voluptate perspiciatis commodi accusamus doloremque tempore magnam dolorem
+                    nisi quo architecto, doloribus placeat aspernatur!
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci illum nisi facilis optio ipsam,
+                    nihil accusantium ducimus tenetur reiciendis expedita ratione consequatur obcaecati commodi facere
+                    magni assumenda quasi quas asperiores.
+                </p>
+                <a href="planchers.html"><button type="button" class="btn btn-outline-dark">Voir plus sur les Planchers</button></a>
+            </div>
+        </div>
+    </div>
+
+    <hr style="width:70%; margin-left:15% !important; margin-right:15% !important;" />
+    <a class="anchor" id="Bardages"></a>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6" align="center">
+                <img src="img/char_1.jpg" class="img-fluid" id="Icon">
+            </div>
+            <div class="col-md-6" align="center">
+                <h3>Bardages</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda facilis, deserunt, minima
+                    dignissimos perspiciatis adipisci odio distinctio unde nobis expedita, rem enim. Ad amet iusto
+                    maxime accusantium esse explicabo nulla?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim perferendis cupiditate, in minima
+                    quibusdam minus omnis, voluptate perspiciatis commodi accusamus doloremque tempore magnam dolorem
+                    nisi quo architecto, doloribus placeat aspernatur!
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit placeat quibusdam pariatur earum
+                    distinctio! Ratione, odio. Nam et debitis magnam consequuntur, iure sunt dolorum consectetur dolore,
+                    reprehenderit quis, ut officia?
+                </p>
+                <a href="bardages.html"><button type="button" class="btn btn-outline-dark">Voir plus sur les Bardages</button></a>
+            </div>
+        </div>
+    </div>
+
+    <hr style="width:70%; margin-left:15% !important; margin-right:15% !important;" />
+    <a class="anchor" id="Constructions"></a>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6" align="center">
+                <img src="img/char_1.jpg" class="img-fluid" id="Icon">
+            </div>
+            <div class="col-md-6" align="center">
+                <h3>Constructions</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda facilis, deserunt, minima
+                    dignissimos perspiciatis adipisci odio distinctio unde nobis expedita, rem enim. Ad amet iusto
+                    maxime accusantium esse explicabo nulla?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim perferendis cupiditate, in minima
+                    quibusdam minus omnis, voluptate perspiciatis commodi accusamus doloremque tempore magnam dolorem
+                    nisi quo architecto, doloribus placeat aspernatur!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, unde. Deserunt doloremque
+                    laborum odit. Molestiae voluptate quam quas dolor tempore, quae esse repellat enim error deserunt
+                    doloribus excepturi ipsa fugit.
+                </p>
+                <a href="constructions.html"><button type="button" class="btn btn-outline-dark">Voir plus sur les Constructions</button></a>
+            </div>
+        </div>
+    </div>
+
+    <hr style="width:70%; margin-left:15% !important; margin-right:15% !important;" />
+    <a class="anchor" id="Carport"></a>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6" align="center">
+                <img src="img/char_1.jpg" class="img-fluid" id="Icon">
+            </div>
+            <div class="col-md-6" align="center">
+                <h3>Carport</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda facilis, deserunt, minima
+                    dignissimos perspiciatis adipisci odio distinctio unde nobis expedita, rem enim. Ad amet iusto
+                    maxime accusantium esse explicabo nulla?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim perferendis cupiditate, in minima
+                    quibusdam minus omnis, voluptate perspiciatis commodi accusamus doloremque tempore magnam dolorem
+                    nisi quo architecto, doloribus placeat aspernatur!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, unde. Deserunt doloremque
+                    laborum odit. Molestiae voluptate quam quas dolor tempore, quae esse repellat enim error deserunt
+                    doloribus excepturi ipsa fugit.
+                </p>
+                <a href="carport.html"><button type="button" class="btn btn-outline-dark">Voir plus sur les Carports</button></a>
+            </div>
+        </div>
+    </div>
+
+
+    <hr style="width:70%; margin-left:15% !important; margin-right:15% !important;" />
+    <a class="anchor" id="Poolhouse"></a>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6" align="center">
+                <img src="img/char_1.jpg" class="img-fluid" id="Icon">
+            </div>
+            <div class="col-md-6" align="center">
+                <h3>Poolhouse</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda facilis, deserunt, minima
+                    dignissimos perspiciatis adipisci odio distinctio unde nobis expedita, rem enim. Ad amet iusto
+                    maxime accusantium esse explicabo nulla?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim perferendis cupiditate, in minima
+                    quibusdam minus omnis, voluptate perspiciatis commodi accusamus doloremque tempore magnam dolorem
+                    nisi quo architecto, doloribus placeat aspernatur!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, unde. Deserunt doloremque
+                    laborum odit. Molestiae voluptate quam quas dolor tempore, quae esse repellat enim error deserunt
+                    doloribus excepturi ipsa fugit.
+                </p>
+                <a href="poolhouse.html"><button type="button" class="btn btn-outline-dark">Voir plus sur les Poolhouses</button></a>
+            </div>
+        </div>
+    </div>
+
+    <hr style="width:70%; margin-left:15% !important; margin-right:15% !important;" />
+    <a class="anchor" id="Rénovations"></a>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6" align="center">
+                <img src="img/char_1.jpg" class="img-fluid" id="Icon">
+            </div>
+            <div class="col-md-6" align="center">
+                <h3>Rénovations</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda facilis, deserunt, minima
+                    dignissimos perspiciatis adipisci odio distinctio unde nobis expedita, rem enim. Ad amet iusto
+                    maxime accusantium esse explicabo nulla?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim perferendis cupiditate, in minima
+                    quibusdam minus omnis, voluptate perspiciatis commodi accusamus doloremque tempore magnam dolorem
+                    nisi quo architecto, doloribus placeat aspernatur!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, unde. Deserunt doloremque
+                    laborum odit. Molestiae voluptate quam quas dolor tempore, quae esse repellat enim error deserunt
+                    doloribus excepturi ipsa fugit.
+                </p>
+                <a href="renovations.html"><button type="button" class="btn btn-outline-dark">Voir plus sur les Rénovations</button></a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <hr style="width:70%; margin-left:15% !important; margin-right:15% !important;" />
+    <a class="anchor" id="société"></a>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12" align="center">
+                <h2 class="titre">La société</h2>
+                <div class="description-society">
+                    <p>Société active depuis 15 ans,
+                        Spécialisée en montage de structures et ossatures en bois, et à même de réaliser tout type
+                        finitions ; planchers, bardage, toiture, zinguerie, électricité et autres techniques, avec accès
+                        professionnel.</p>
+                    <p>
+                        Le projet peut donc être mené de A à Z par nos soins, du terrassement aux finitions.
+                        Notre équipe se compose de 5 artisans qualifiés, épaulé par un dessinateur, et un ingénieur pour
+                        les projets plus complexes.</p>
+                    <p>
+                        <strong class="strong">
+                            Pour un premier contact, téléphonez à notre responsable de projet (0495/99 35 12- Vermeulen
+                            Xavier) pour pouvoir cerner rapidement les différents aspects de votre demande ; Visuel,
+                            techniques, accès, délais, etc…
+                        </strong>
+                    </p>
+                    <p>
+                        Après avoir bien compris vos souhaits, et confirmé notre intérêt et compétence, un rendez-vous
+                        est indispensable pour en discuter.
+                    </p>
+                    Suite à ce rendez-vous, nous vous proposerons une esquisse et un premier estimatif, ceux-ci nous
+                    serviront de base de discussion.
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Fin articles  -->
+
+    <a class="anchor" id="Contact"></a>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-white footer-fixed-bottom">
+        <!-- Grid container -->
+        <div class="container p-4">
+            <!-- Section: Text -->
+            <section class="mb-4">
+                Contacter nous pour discuter de vos projets, nous pourrons y apporter toute notre expérience et nos
+                idées.
+            </section>
+            <!-- Section: Text -->
+            <br>
+            <!-- Section: Links -->
+            <section class="">
+                <!--Grid row-->
+                <div class="row">
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Contact</h5>
+                        <br>
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                Mr Mihai Vareghy
+                            </li>
+                            <li>
+                                Mr Vermeulen Xavier
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Téléphone</h5>
+                        <br>
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                0484/77 68 96
+                            </li>
+                            <li>
+                                0495/99 35 12
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">e-mail</h5>
+                        <br>
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                mihaibv01@yahoo.com
+                            </li>
+                            <li>
+                                xavier.rene.vermeulen@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Coordonnées</h5>
+                        <br>
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                MD Invest, rue du Roetart 122 1180 Uccle
+                            </li>
+                            <li>
+                                BE 0452 800 552
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+                </div>
+                <!--Grid row-->
+            </section>
+            <!-- Section: Links -->
+        </div>
+        <!-- Grid container -->
+    </footer>
+
+
+
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> -->
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

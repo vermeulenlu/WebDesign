@@ -1,0 +1,90 @@
+*, *::before, *::after{
+    box-sizing: border-box; /*pour prendre margin + padding blabla*/
+}
+html{
+    font-size: 16px;
+}
+body{
+    font-family: 'Helvetica', sans-serif;
+    line-height: 1.625;
+    margin: 0; /* par defaut, le body a des margins*/
+    background-color: white;
+}
+a{
+    color: inherit; /*Tous les liens héritent de la couleur parent*/
+    text-decoration: none;
+    transition: color 0.3s;
+}
+header{
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.918) 15.5%, rgba(0, 0, 0, 0.521) 50%),
+    url(img/eggs.jpg) center center / cover no-repeat;
+    color: white;
+}
+.topbar{
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    text-align: center; /* tou les elements doivent etre centres*/
+    padding: 18px 0px;
+}
+.topbar a:hover{
+    color: #C89446;
+}
+.nav-item{
+    display: inline-block; /*Pour pouvoir considerer des block qui se placent ern ligne et pas verticalement*/
+    margin: 10px 10px; 
+}
+.logo{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.title{
+    padding: 60px 0px 100px 0;
+    text-align: center;
+}
+.title-welcome{
+    display: block;
+    font-size: 2.0rem;
+    color: #C89446;
+    font-weight: 200;
+    font-style: italic;
+    line-height: 1;
+}
+.title-title{
+    display: block;
+    font-size: 3.7rem;
+    color: white;
+    line-height: 1.4;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+.title-spec{
+    display: block;
+    font-size: 1.5rem;
+    color: white;
+    line-height: 1;
+    font-weight: 100;
+}
+.article{
+    display: block;
+}
+.article img{ 
+    display: block;
+    max-width: 100%;
+    scale: 80%;
+}
+.description{
+    display: block;
+    max-width: 100%;
+    scale: 80%;
+}
+
+/* RESPONSIVE PART*/
+@media only screen and (min-width: 650px){
+    .topbar{
+        display: flex;
+        justify-content: space-between;
+        max-width: 1110px;
+        margin: 0 auto;
+        padding: 30px 30px
+    }
+}
